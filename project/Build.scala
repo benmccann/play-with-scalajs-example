@@ -54,6 +54,7 @@ object ApplicationBuild extends Build with UniversalKeys {
       scalaVersion := Versions.scala,
       persistLauncher := true,
       persistLauncher in Test := false,
+      relativeSourceMaps := true,
       libraryDependencies ++= ("org.scala-lang.modules.scalajs" %%% "scalajs-dom" % Versions.scalajsDom) +: Dependencies.scalajs
     ) ++ sharedDirectorySettings
 
